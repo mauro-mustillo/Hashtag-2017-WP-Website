@@ -1,0 +1,596 @@
+/*
+	Theme Name: Hashtag 2017
+	Theme URI: http://hashtagfresno.com
+	Description: 2017 Hashtag site
+	Version: 
+	Author: Shift3 Tech
+
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*, *:after, *:before {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+/* html 
+element 62.5% font-size for REM use */
+html {
+}
+body {
+}
+/* clear */
+.clear:before, .clear:after {
+	content: ' ';
+	display: table;
+}
+.clear:after {
+	clear: both;
+}
+.clear {
+ *zoom:1;
+}
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+}
+a {
+	color: #444;
+	text-decoration: none;
+}
+a:hover {
+	color: #444;
+}
+a:focus {
+	outline: 0;
+}
+a:hover, a:active {
+	outline: 0;
+}
+input:focus {
+	outline: 0;
+	border: 1px solid #04A4CC;
+}
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+
+/*------------------------------------*\
+    Header
+\*------------------------------------*/
+header {
+	position: fixed;
+	top: 0px;
+	z-index: 99999;
+	height: 70px;
+	width: 100%;
+	background-color: rgba(0,0,0,.8)
+}
+.logo {
+	float: left;  align-self: flex-start;
+}
+.logo img {
+	max-height: 50px!important;
+	margin: 10px
+}
+nav {
+	float: right;
+
+}
+nav ul {padding: 0px!important}
+nav li {
+	list-style: none; padding: 10px 20px
+}
+nav a, nav a:hover {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	color: #ffffff;
+}
+header .container {
+	display: flex; align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;  flex-direction: row;
+}
+header nav {margin-left: auto;}
+.menu li {display: inline-block; float: left; }
+
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+footer *[id^='custom_post_widget-'] {color: #fff; font-size: 16px; line-height: 20px; padding: 15px 0px}
+footer {
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;background-color: #000; padding: 50px 0px 50px 0px!important; margin-top: -10px; }
+footer a, footer a:hover {color: #fff}
+.copyright {display: block; float: none; clear: both; font-size: 14px; text-align: center; margin-top: 40px; padding-top: 20px; border-top: solid 1px #666}
+.footer-contact img {float: left; margin-right: 20px}
+.copyright img {clear: both; float: none; display: block; margin: auto}
+
+/*------------------------------------*\
+    Home Page
+\*------------------------------------*/
+
+
+.home-bg {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom
+}
+.home-bg .home-title {
+	font-family: 'Raleway', sans-serif;
+	color: #ffffff;
+	margin: 0px auto 4% auto;
+	font-size: 5.5vw;
+	font-weight: 900;
+	line-height: 6vw;
+	text-align: center;
+	text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
+	max-width: 1000px;
+	text-transform: uppercase
+}
+.home-text {
+	text-align: center;
+}
+.home-bg .home-text a {
+	border-radius: 5px;
+	background-color: #1cbbb4;
+	font-family: 'Raleway', sans-serif;
+	color: #ffffff;
+	margin: 10px;
+	font-size: 1.5vw;
+	padding: 10px 40px;
+	font-weight: 700;
+	text-decoration: none;
+	line-height: 48px;
+}
+.home-bg .home-text a:hover {
+	background-color: #20D2CA;
+}
+/*------------------------------------*\
+    COMMON
+\*------------------------------------*/
+
+h1, h3 {
+	font-family: 'Droid Serif', serif;
+	color: #fbaf5d;
+	font-size: 24px;
+	padding: 10px;
+	font-style: italic;
+	margin-bottom: 10px;
+	line-height: 0.5;
+	text-align: center;
+}
+h1 span, h3 span {
+	display: inline-block;
+	position: relative;
+}
+h1 span:before, h1 span:after, h3 span:before, h3 span:after {
+	content: "";
+	position: absolute;
+	height: 5px;
+	border-bottom: 1px solid #fbaf5d;
+	top: 0;
+	width: 75px;
+}
+h1 span:before, h3 span:before {
+	right: 100%;
+	margin-right: 15px;
+}
+h1 span:after, h3 span:after {
+	left: 100%;
+	margin-left: 15px;
+}
+h2, h4 {
+	font-family: 'Raleway', sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 60px;
+	margin-top: 0px;
+	font-weight: 900;
+	padding-bottom: 50px
+}
+.content {
+	font-family: 'Hind', sans-serif;
+	color: #000000;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 36px;
+	padding: 60px 0px
+}
+.content p {
+	padding-bottom: 30px;
+}
+
+.internals-bg {height:400px; background-position: center center}
+
+*[id^='custom_post_widget-'] {
+	padding: 75px 0px;
+	font-family: 'Hind', sans-serif;
+	color: #000000;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 36px;
+}
+/*------------------------------------*\
+    Content Widgets - Connect, Learn & Grow
+\*------------------------------------*/
+
+#custom_post_widget-14 {
+	text-align: center;
+	font-family: 'Droid Serif', serif;
+	color: #fefefe;
+	font-style: italic;
+	font-size: 24px;
+	background-image: url(img/connect-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#custom_post_widget-14 h2 {
+	font-family: 'Raleway', sans-serif;
+	color: #fefefe;
+	max-width: 650px;
+	font-style: normal;
+	font-size: 60px;
+	text-transform: uppercase;
+	font-weight: 900!important;
+	padding-bottom: 30px;
+	line-height: 60px;
+	margin: auto
+}
+#custom_post_widget-14 strong {
+	color: #fefefe;
+	font-weight: normal;
+	font-size: 60px;
+	margin-bottom: 50px;
+	font-style: italic;
+	margin-top: 15px;
+	display: block
+}
+#custom_post_widget-14 a {
+	font-family: 'Raleway', sans-serif;
+	color: #ffffff;
+	border-radius: 5px;
+	font-style: normal;
+	font-size: 20px;
+	background-color: #1cbbb4;
+	font-weight: 700;
+	padding: 15px 60px;
+	line-height: 36px;
+}
+#custom_post_widget-14 a:hover {
+	background-color: #20D2CA;
+	text-decoration: none
+}
+/*------------------------------------*\
+    Content Widgets - Amenities
+\*------------------------------------*/
+#custom_post_widget-20 ul {
+	margin-top: 60px;
+	display: flex;
+	flex-wrap: wrap;
+}
+#custom_post_widget-20 li {
+	max-width: 25%;
+	list-style: none;
+	float: left;
+	font-family: 'Hind', sans-serif;
+	text-align: center;
+	padding: 30px 20px;
+	color: #000000;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+}
+#custom_post_widget-20 .fa {
+	font-size: 100px;
+	display: block
+}
+#custom_post_widget-20 li strong {
+	font-size: 24px;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-weight: 900!important;
+	display: block;
+	line-height: 24px;
+	padding: 30px 0px 10px 0px
+}
+/*------------------------------------*\
+    Content Widgets - Gallery
+\*------------------------------------*/
+
+#custom_post_widget-34 {
+	padding: 0px!important
+}
+/*------------------------------------*\
+    Content Widgets - Location
+\*------------------------------------*/
+
+.gmwd_container_wrapper {
+	margin: 50px 0px 75px 0px!important
+}
+#custom_post_widget-48 em strong {
+	color: #004a80;
+	font-style: normal;
+	font-size: 36px;
+	margin-top: 50px;
+	display: block;
+	text-align: center;
+	font-weight: 700;
+	line-height: 60px;
+}
+
+/*------------------------------------*\
+    Content Widgets - Talisha
+\*------------------------------------*/
+
+
+#custom_post_widget-60 {
+	display: table;
+	padding-bottom: 0px;
+	color: #e6f8fd;
+	background: #62a0af; /* Old browsers */
+	background: -moz-linear-gradient(top, #62a0af 0%, #71bbca 18%, #71bbca 80%, #5c99a5 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #62a0af 0%, #71bbca 18%, #71bbca 80%, #5c99a5 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #62a0af 0%, #71bbca 18%, #71bbca 80%, #5c99a5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62a0af', endColorstr='#5c99a5', GradientType=0 );
+	width: 100%
+}
+#custom_post_widget-60 em {
+	color: #fff;
+	font-size: 24px;
+	padding-bottom: 20px;
+	margin-top: -25px;
+	display: block
+}
+#custom_post_widget-60 strong {
+	font-family: 'Raleway', sans-serif;
+	color: #ffffff;
+	padding-top: 15px;
+	font-size: 48px;
+	display: block;
+	font-weight: 900;
+}
+#custom_post_widget-60 h4 {
+	font-family: DroidSerif;
+	color: #d7f4fa;
+	text-align: left;
+	padding-bottom: 5px;
+	display: inline;
+	margin-bottom: 15px!important;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: italic;
+	border-bottom: 1px solid #d7f4fa;
+	text-transform: none
+}
+.team-image {
+	vertical-align: bottom;
+	display: table-cell;
+	height: 100%;
+	flex: 1
+}
+.team-image img {
+	vertical-align: bottom
+}
+#custom_post_widget-60 .col-md-6 {
+	flex: 1
+}
+#custom_post_widget-60 p {
+	max-width: 500px
+}
+#custom_post_widget-60 a {
+	font-family: Hind;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 18px;
+	padding: 10px 30px;
+	border: 1px solid #fff;
+	margin-top: 30px;
+	font-weight: 500;
+	line-height: 36px;
+}
+/*------------------------------------*\
+    Content Widgets - Good Things
+\*------------------------------------*/
+
+#custom_post_widget-71 {
+	text-align: center
+}
+#custom_post_widget-71 h4 {
+	text-transform: none;
+	max-width: 900px;
+	margin: auto;
+	color: #000000;
+	font-size: 36px; padding-bottom: 25px;
+	font-weight: 900;
+	line-height: 48px;
+}
+#custom_post_widget-71 a {
+	border-radius: 5px;
+	background-color: #1cbbb4;
+	font-family: 'Raleway', sans-serif;
+	color: #ffffff;
+	margin: 10px; width: 300px;
+	font-size: 24px; display: inline-block;
+	padding: 10px 40px;
+	font-weight: 700;
+	text-decoration: none;
+	line-height: 48px;
+}
+#custom_post_widget-71 a:hover {
+	background-color: #20D2CA;
+}
+
+/*------------------------------------*\
+    Content Widgets - Say Hello
+\*------------------------------------*/
+
+#custom_post_widget-75 {color: #fff; text-align: center; background-image: url(img/say-hello-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; 	padding: 75px 0px 50px 0px;
+}
+#custom_post_widget-75 h4
+	{font-family: Raleway;
+	color: #ffffff; padding-bottom: 0px;
+	font-size: 60px;
+	font-weight: 900;
+	;}
+
+#custom_post_widget-75 a {
+	border-radius: 5px;
+	background-color: #1cbbb4;
+	font-family: 'Raleway', sans-serif;
+	color: #ffffff;
+	margin: 10px; margin: 25px auto;
+	font-size: 24px; display: inline-block;
+	padding: 10px 40px; width: 300px;
+	font-weight: 700;
+	text-decoration: none;
+	line-height: 48px;
+}
+#custom_post_widget-75 a:hover {
+	background-color: #20D2CA;
+}
+
+#custom_post_widget-75 strong {
+	color: #fefefe;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 40px;}
+
+
+/*------------------------------------*\
+    Content Widgets - Contact Info
+\*------------------------------------*/
+
+.contact-block {background-color: #7db5bd; color: #fff}
+.contact-block ul { padding: 0px }
+.contact-block li {width: 50%; float: left; list-style: none; 
+	color: #fefefe; height: 60px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 26px;
+	}
+.contact-block .col-lg-5 {background-image: url(img/hotel-virginia.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;; height: 350px}
+.right-side-content {max-width: 550px; padding-left: 50px}
+.left-side-content {max-width: 550px; padding-right: 30px}
+
+.right-side-content strong {	font-family: 'Raleway', sans-serif;
+	color: #fefefe;
+	font-size: 36px; display: block;
+	font-weight: 900;margin: 75px 0px 30px 0px;
+	line-height: 36px!important;}
+#custom_post_widget-92 {padding: 0px}
+#custom_post_widget-92 .gmwd_container_wrapper {margin: 0px!important}
+#custom_post_widget-92 .col-lg-7, #custom_post_widget-92 .col-lg-5 {padding: 0px}
+.contact-block-2 {background-color: #f8f8f8;}
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background: #04A4CC;
+	color: #FFF;
+	text-shadow: none;
+}
+::-webkit-selection {
+ background:#04A4CC;
+ color:#FFF;
+ text-shadow:none;
+}
+::-moz-selection {
+ background:#04A4CC;
+ color:#FFF;
+ text-shadow:none;
+}
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+
+
+
+@media screen and (min-width:1200px) {
+.home-bg .home-title {
+	font-size: 80px!important;
+	line-height: 80px;
+}
+.home-bg .home-text a {
+	font-size: 20px!important;
+	line-height: 48px;
+}
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+* {
+	background: transparent !important;
+	color: #000 !important;
+	box-shadow: none !important;
+	text-shadow: none !important;
+}
+a, a:visited {
+	text-decoration: underline;
+}
+a[href]:after {
+	content: " (" attr(href) ")";
+}
+abbr[title]:after {
+	content: " (" attr(title) ")";
+}
+.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+	content: "";
+}
+pre, blockquote {
+	border: 1px solid #999;
+	page-break-inside: avoid;
+}
+thead {
+	display: table-header-group;
+}
+tr, img {
+	page-break-inside: avoid;
+}
+img {
+	max-width: 100% !important;
+}
+@page {
+	margin: 0.5cm;
+}
+p, h2, h3 {
+	orphans: 3;
+	widows: 3;
+}
+h2, h3 {
+	page-break-after: avoid;
+}
+}
